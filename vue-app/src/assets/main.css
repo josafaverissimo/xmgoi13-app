@@ -1,0 +1,45 @@
+@import './reset.css';
+@import './fonts.css';
+
+:root {
+  /* Utilities */
+  --padding-sm: 0.5rem;
+  --padding-md: 2rem;
+  --padding-lg: 3rem;
+
+  /* Font Family */
+  --font-family-title: 'Josefin Sans';
+
+  /* Sizes */
+  --size-text-sm: 0.8rem;
+  --size-text-md: 1.3rem;
+  --size-text-lg: 2rem;
+
+  /* Colors */
+  --color-primary: #2541B2;
+  --color-white: #fff;
+  --color-black: #000;
+
+  &[data-theme="light"] {
+    /* Colors */
+    --color-text: #000;
+    --color-background: #fff;
+    --color-light-shade: #e0e0e0;
+  }
+
+  &[data-theme="dark"] {
+    --color-text: #fff;
+    --color-background: #151515;
+    --color-light-shade: #333;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  svg {
+    fill: var(--color-text);
+  }
+}

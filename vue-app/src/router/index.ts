@@ -1,17 +1,29 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HelloWorld from "@/components/HelloWorld.vue";
-import Database from "@/components/Database.vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import ShoppingListView from '../views/ShoppingList.vue'
 
-export default createRouter({
-  history: createWebHashHistory(),
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      component: HelloWorld
+      path: '/shoppingList',
+      name: 'shoppingList',
+      component: ShoppingListView
     },
     {
-      path: 'database',
-      component: Database
+      path: '/clients',
+      name: 'clients',
+      component: () => import('../views/ClientsView.vue')
+    },
+    {
+      path: '/products',
+      name: 'products',
+      component: () => import('../views/ProductsView.vue')
+    },
+    {
+      path: '/:pathMatch(.*)',
+      redirect: '/shoppingList'
     }
   ]
 })
+
+export default router
