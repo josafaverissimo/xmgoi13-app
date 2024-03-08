@@ -3,7 +3,7 @@
     <Icon :icon="icon" :size="iconSize" />
 
     <div class="tabLink__name">
-      <slot name="tabLinkName"/>
+      <slot name="tabLinkName" />
     </div>
   </router-link>
 </template>

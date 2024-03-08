@@ -1,4 +1,4 @@
-import { useThemeStore } from "@/stores/darkTheme";
+import { useThemeStore } from '@/stores/darkTheme'
 
 export function toggleTheme() {
   const themeStore = useThemeStore()

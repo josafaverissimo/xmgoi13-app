@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import Tabs from "@/components/atomic/organisms/navigation/Tabs.vue";
+import Tabs from '@/components/atomic/organisms/navigation/Tabs.vue'
 </script>
 
 <style scoped>

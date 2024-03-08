@@ -1,6 +1,8 @@
 <template>
-  <Button class="fab pointer primary">
-    <Icon :icon="icon" :size="2" color="white"></Icon>
+  <Button class="fab pointer">
+    <slot name="icon">
+      <Icon :icon="icon" :size="2" :color="iconColor"></Icon>
+    </slot>
   </Button>
 </template>
 
@@ -10,6 +12,7 @@ import Icon from '../Icon.vue'
 
 defineProps<{
   icon: string
+  iconColor: string
 }>()
 </script>
 

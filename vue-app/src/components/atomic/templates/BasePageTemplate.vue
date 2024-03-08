@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import Header from '@/components/atomic/molecules/navigation/Header.vue'
 import BottomTabs from '@/components/atomic/organisms/navigation/BottomTabs.vue'
-import Sidebar from "@/components/atomic/organisms/navigation/Sidebar.vue";
+import Sidebar from '@/components/atomic/organisms/navigation/Sidebar.vue'
 
 defineProps({
   iconSize: {

@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import Title from "@/components/atomic/atoms/page/Title.vue";
+import Title from '@/components/atomic/atoms/page/Title.vue'
 </script>
